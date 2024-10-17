@@ -8,7 +8,8 @@ import session from "./middleware/session.js";
 import routes from "./routes/index.js";
 import { init as initSocket } from "./socket/index.js";
 const corsConfig = {
-    origin: process.env.CORS_ORIGIN || "http://localhost:3000",
+    //origin: process.env.CORS_ORIGIN || "http://localhost:3000",
+    origin: "*",
     credentials: true
 };
 const app = express();

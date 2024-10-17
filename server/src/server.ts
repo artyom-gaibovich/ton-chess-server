@@ -13,7 +13,8 @@ import {init as initSocket} from "./socket/index.js";
 const corsConfig = {
     //origin: process.env.CORS_ORIGIN || "http://localhost:3000",
     origin : "*",
-    credentials: true
+    credentials: true,
+
 };
 
 const app = express();
